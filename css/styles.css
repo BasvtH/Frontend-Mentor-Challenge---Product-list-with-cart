@@ -62,6 +62,9 @@ strong {
     margin-inline: auto;
     padding-inline: 1.5rem;
 }
+main.container {
+    margin-block: 1em;
+}
 
 .btn {
     background-color: var(--clr-accenty);
@@ -75,6 +78,9 @@ strong {
 }
 
 /* product card */
+.products-container {
+    margin-block: 1rem;
+}
 .product-card {
     h2 {
         font-size: 1rem;
@@ -338,6 +344,7 @@ strong {
             grid-area: 1 / 1 / 2 / 2;
         }
         .products-container {
+            margin-block: 0;
             grid-area: 2 / 1 / 3 / 2;
             display: grid;
             grid-template-columns: 1fr 1fr;
