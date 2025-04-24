@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Product list with cart</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<main class="container">
+
+  <h1>Desserts</h1>
+  <div id="products" class="products-container">
+
+  </div>
+  <div id="cart" class="cart shopping-cart-list">
+    <div class="wrap">
+      <h2>Your Cart (<span id="total-items-in-cart">0</span>)</h2>
+      
+      <div id="cart-items">
+      </div>
+      <div id="total-price">
+        
+      </div>
+      <div class="carbon-neutral hide">This is a <strong>carbon-neutral</strong> delivery</div>
+      <button id="confirm" class="btn confirm-order hide">Confirm Order</button>
+    </div>
+  </div>
+</main>
+<footer>
+  <div class="container">
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+      Coded by <a href="#">Bas van &apos;t Hoff</a>.
+    </div>
+  </div> 
+</footer>
+<!-- dialog box -->
+<dialog class="modal confirm" id="modal">
+  <img src="./assets/images/icon-order-confirmed.svg" alt="confirmed">
+  <h1>Order Confirmed</h1>
+  <p>We hope you enjoy your food!</p>
+  <div class="wrap">
+      <div id="confirm-items"></div>
+      <div id="confirm-total-price"></div>
+  </div>
+  <button id="clear-cart" class="btn close-button">Start New Order</button>
+
+</dialog>
+
+<script src="js/scripts.js"></script>
+</body>
+</html>
